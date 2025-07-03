@@ -76,23 +76,23 @@ II. OpenEmbedded Build System Tasks (Inside the Blue Box)
 2. Unpack and Extract:
       ◦ After fetching, sources are unpacked and extracted into different folders.
 3. Patch Application:
-      ◦ Any modifications to software package sources are typically done via patches for             ease of portability and application.
+      ◦ Any modifications to software package sources are typically done via patches for ease of portability and application.
       ◦ The OpenEmbedded system applies all instructed patches at this stage. Patches are often created to migrate software to a specific platform or resolve build errors.
 4. Configuration and Compilation:
       ◦ Compilation is typically performed by GCC.
-      ◦ If other build systems (e.g., GNU Autoconf) are used, extra configuration is done            before compilation to generate makefiles.
+      ◦ If other build systems (e.g., GNU Autoconf) are used, extra configuration is done before compilation to generate makefiles.
       ◦ Compilation then proceeds using make commands and GCC.
       ◦ Binary outputs are deployed to a separate folder.
 5. Output Analysis:
       ◦ OpenEmbedded gathers binary outputs and prepares files for package generation.
 6. Package Generation:
-      ◦ Depending on the desired package manager output, packages are generated (e.g., RPM           generation, Deb package outputs).
+      ◦ Depending on the desired package manager output, packages are generated (e.g., RPM generation, Deb package outputs).
 7. Quality Assurance Checks:
-      ◦ Applied to the generated packages and the binaries within the software package               archive.
+      ◦ Applied to the generated packages and the binaries within the software package archive.
 8. Software Package Outputs (First Stage Output):
-      ◦ If all checks are complete, the build system produces software package outputs,              represented as a green box.
-      ◦ This is the first stage of OpenEmbedded's capability, where it creates package feeds         or archives containing pre-compiled binaries for a specific platform using                   configuration files and metadata.
-      ◦ These package archives can be copied to an already running Linux system of the same          architecture and installed using package manager commands.
+      ◦ If all checks are complete, the build system produces software package outputs, represented as a green box.
+      ◦ This is the first stage of OpenEmbedded's capability, where it creates package feeds or archives containing pre-compiled binaries for a specific platform using configuration files and metadata.
+      ◦ These package archives can be copied to an already running Linux system of the same architecture and installed using package manager commands.
 
 
 
