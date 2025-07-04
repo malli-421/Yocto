@@ -3,7 +3,7 @@
 ## Introduction to Yocto project
 
 ==> Role of Yocto Project
-- The Yocto Project is a toolset and framework
+- The Yocto Project is a toolset and framework.
 - The Yocto Project is a open_source Collabrative project, that helps developers build custom Linux-based operating systems for embedded systems (like smart meters, routers, automotive devices, industrial machines, etc.).
 
 ==> Core Components and Terminology
