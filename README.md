@@ -28,14 +28,14 @@
 OpenEmbedded consists of a collection of **scripts and Python libraries** that manage operations on software sources and packages for embedded Linux development.
 - BitBake: This is the **build engine** that powers the OpenEmbedded build system.
 - Poky: Poky is the reference build system provided by the Yocto Project. It includes everything needed to build a custom embedded Linux OS.
-  --it include's:
-        --BitBake
-        --Metadata
-            -Recipe (.bb) Describe hoe to fetch, configure, compile, and install packages.
-            -class (.bbclass) Reusable funtions and build logic.
-            -config files (.conf) it Defines variables, machine settings, distro settings, etc...
-        --Default layers- like a meta, meta_poky, meta_Yocto_bsp 
---> Custom Layer: This is where your own project code goes.
+  - it include's:
+        - BitBake
+        - Metadata
+            - Recipe (.bb) Describe hoe to fetch, configure, compile, and install packages.
+            - class (.bbclass) Reusable funtions and build logic.
+            - config files (.conf) it Defines variables, machine settings, distro settings, etc...
+        - Default layers- like a meta, meta_poky, meta_Yocto_bsp 
+- Custom Layer: This is where your own project code goes.
 
 ---
 ---
