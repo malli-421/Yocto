@@ -1,5 +1,5 @@
 ### Yocto Project ###
-
+  
 ## Introduction to Yocto project
 
 ==> Role of Yocto Project
@@ -7,7 +7,7 @@
 - The Yocto Project is a open_source Collabrative project, that helps developers build custom Linux-based operating systems for embedded systems (like smart meters, routers, automotive devices, industrial machines, etc.).
 
 ==> Core Components and Terminology
-
+```
 +----------------------------+
 |   Your Custom Layers       |  ← Your own apps, configs, and board support
 |   (meta-myproject, etc.)   |
@@ -22,7 +22,7 @@
 +----------------------------+
 |   Source Code / Packages   |  ← Kernel, BusyBox, toolchain, libraries
 +----------------------------+
-
+```
 --> Source code: This is the raw software you want to build into your embedded Linux images.
 --> OpenEmbedded: This is the **build system** and the primary software ecosystem used by the Yocto Project to generate embedded Linux distributions.
 OpenEmbedded consists of a collection of **scripts and Python libraries** that manage operations on software sources and packages for embedded Linux development.
@@ -42,15 +42,15 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
     1. What is Yocto Project?
     2. Explain the Architecture of Yocto Project?
     3. What are layers in Yocto?
-    
+---
+
 
 ## Yocto Project Architecture
-
+```
 
 ![Screenshot 2025-07-03 154231](https://github.com/user-attachments/assets/1a47ef0a-3bc5-4fcd-9756-79a2a123ae4c)
 
-
-
+```
 I. Inputs to the OpenEmbedded Build System
 ---
 ---
@@ -74,6 +74,7 @@ II. OpenEmbedded Build System Tasks (Inside the Blue Box)
 ---
     Inside the OpenEmbedded build system, various tasks are executed sequentially for each software package required to build an image or SDK. These tasks are depicted as gray boxes:
 ---
+
 1. Source Fetching:
       ◦ Described in the metadata using Python and Bash scripts within recipes and patches.
       ◦ Downloads or clones source code from specified source mirrors.
@@ -98,8 +99,6 @@ II. OpenEmbedded Build System Tasks (Inside the Blue Box)
       ◦ If all checks are complete, the build system produces software package outputs, represented as a green box.
       ◦ This is the first stage of OpenEmbedded's capability, where it creates package feeds or archives containing pre-compiled binaries for a specific platform using configuration files and metadata.
       ◦ These package archives can be copied to an already running Linux system of the same architecture and installed using package manager commands.
-
-
 
 
 
