@@ -46,6 +46,11 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
 
 ## Yocto Project Architecture
 
+
+![Screenshot 2025-07-03 154231](https://github.com/user-attachments/assets/1a47ef0a-3bc5-4fcd-9756-79a2a123ae4c)
+
+
+
 I. Inputs to the OpenEmbedded Build System
 ---
 ---
