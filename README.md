@@ -59,10 +59,10 @@ I. Inputs to the OpenEmbedded Build System
 - Metadata: This encompasses all the layers and recipe files contained within those layers.
 - Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
 - Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
-          ◦ Architecture
-          ◦ Device tree
-          ◦ Kernel command line arguments
-          ◦ Kernel config file
+          - Architecture
+          - Device tree
+          - Kernel command line arguments
+          - Kernel config file
 - Policy Configuration: Customizable settings to change how the build system behaves.
 - Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
 
