@@ -55,16 +55,16 @@ I. Inputs to the OpenEmbedded Build System
 ---
     The OpenEmbedded build system, represented by a blue rectangle, takes several inputs, depicted as brown rectangles:
 ---
-• User Configuration: These are conf files that users configure to set parameters like the machine type for the build and the layers to be included.
-• Metadata: This encompasses all the layers and recipe files contained within those layers.
-◦ Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
-• Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
+- User Configuration: These are conf files that users configure to set parameters like the machine type for the build and the layers to be included.
+- Metadata: This encompasses all the layers and recipe files contained within those layers.
+- Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
+- Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
           ◦ Architecture
           ◦ Device tree
           ◦ Kernel command line arguments
           ◦ Kernel config file
-• Policy Configuration: Customizable settings to change how the build system behaves.
-•Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
+- Policy Configuration: Customizable settings to change how the build system behaves.
+- Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
 
 --------------------------------------------------------------------------------
 
