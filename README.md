@@ -40,15 +40,17 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
 ---
 ---
     1. What is Yocto Project?
-    2. Explain the Architecture of Yocto Project?
+    2. Explain the Core Components of Yocto Project?
     3. What are layers in Yocto?
+    4. What is Poky and explain it's main components?
 ---
 
 
 ## Yocto Project Architecture
 
-<prev>
-        ![Screenshot 2025-07-03 154231](https://github.com/user-attachments/assets/1a47ef0a-3bc5-4fcd-9756-79a2a123ae4c)
+```
+![Screenshot 2025-07-03 154231](https://github.com/user-attachments/assets/1a47ef0a-3bc5-4fcd-9756-79a2a123ae4c)
+```
 
 I. Inputs to the OpenEmbedded Build System
 ---
