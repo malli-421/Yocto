@@ -52,9 +52,7 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
 
 I. Inputs to the OpenEmbedded Build System
 ---
----
-    The OpenEmbedded build system, represented by a blue rectangle, takes several inputs, depicted as brown rectangles:
----
+
 - User Configuration: These are conf files that users configure to set parameters like the machine type for the build and the layers to be included.
 - Metadata: This encompasses all the layers and recipe files contained within those layers.
 - Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
@@ -69,9 +67,6 @@ I. Inputs to the OpenEmbedded Build System
 --------------------------------------------------------------------------------
 
 II. OpenEmbedded Build System Tasks (Inside the Blue Box)
----
----
-    Inside the OpenEmbedded build system, various tasks are executed sequentially for each software package required to build an image or SDK. These tasks are depicted as gray boxes:
 ---
 
 1. Source Fetching:
