@@ -294,16 +294,16 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
 I. Inputs to the OpenEmbedded Build System
 ---
 
-- User Configuration: These are conf files that users configure to set parameters like the machine type for the build and the layers to be included.
-- Metadata: This encompasses all the layers and recipe files contained within those layers.
-- Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
-- Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
+1. User Configuration: These are conf files that users configure to set parameters like the machine type for the build and the layers to be included.
+2. Metadata: This encompasses all the layers and recipe files contained within those layers.
+3. Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
+4. Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
           - Architecture
           - Device tree
           - Kernel command line arguments
           - Kernel config file
-- Policy Configuration: Customizable settings to change how the build system behaves.
-- Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
+5. Policy Configuration: Customizable settings to change how the build system behaves.
+6. Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
 
 --------------------------------------------------------------------------------
 
@@ -311,29 +311,29 @@ II. OpenEmbedded Build System Tasks (Inside the Blue Box)
 ---
 
 1. Source Fetching:
-      ◦ Described in the metadata using Python and Bash scripts within recipes and patches.
-      ◦ Downloads or clones source code from specified source mirrors.
-      ◦ Archives and Git repositories are stored in a downloads folder.
-2. Unpack and Extract:
-      ◦ After fetching, sources are unpacked and extracted into different folders.
-3. Patch Application:
-      ◦ Any modifications to software package sources are typically done via patches for ease of portability and application.
-      ◦ The OpenEmbedded system applies all instructed patches at this stage. Patches are often created to migrate software to a specific platform or resolve build errors.
-4. Configuration and Compilation:
-      ◦ Compilation is typically performed by GCC.
-      ◦ If other build systems (e.g., GNU Autoconf) are used, extra configuration is done before compilation to generate makefiles.
-      ◦ Compilation then proceeds using make commands and GCC.
-      ◦ Binary outputs are deployed to a separate folder.
-5. Output Analysis:
-      ◦ OpenEmbedded gathers binary outputs and prepares files for package generation.
-6. Package Generation:
-      ◦ Depending on the desired package manager output, packages are generated (e.g., RPM generation, Deb package outputs).
-7. Quality Assurance Checks:
-      ◦ Applied to the generated packages and the binaries within the software package archive.
-8. Software Package Outputs (First Stage Output):
-      ◦ If all checks are complete, the build system produces software package outputs, represented as a green box.
-      ◦ This is the first stage of OpenEmbedded's capability, where it creates package feeds or archives containing pre-compiled binaries for a specific platform using configuration files and metadata.
-      ◦ These package archives can be copied to an already running Linux system of the same architecture and installed using package manager commands.
+   - Described in the metadata using Python and Bash scripts within recipes and patches.
+   - Downloads or clones source code from specified source mirrors.
+   - Archives and Git repositories are stored in a downloads folder.
+3. Unpack and Extract:
+   - After fetching, sources are unpacked and extracted into different folders.
+4. Patch Application:
+   - Any modifications to software package sources are typically done via patches for ease of portability and application.
+   - The OpenEmbedded system applies all instructed patches at this stage. Patches are often created to migrate software to a specific         platform or resolve build errors.
+5. Configuration and Compilation:
+   - Compilation is typically performed by GCC.
+   - If other build systems (e.g., GNU Autoconf) are used, extra configuration is done before compilation to generate makefiles.
+   - Compilation then proceeds using make commands and GCC.
+   - Binary outputs are deployed to a separate folder.
+6. Output Analysis:
+   - OpenEmbedded gathers binary outputs and prepares files for package generation.
+7. Package Generation:
+   - Depending on the desired package manager output, packages are generated (e.g., RPM generation, Deb package outputs).
+8. Quality Assurance Checks:
+   - Applied to the generated packages and the binaries within the software package archive.
+9. Software Package Outputs (First Stage Output):
+   - If all checks are complete, the build system produces software package outputs, represented as a green box.
+   - This is the first stage of OpenEmbedded's capability, where it creates package feeds or archives containing pre-compiled binaries         for a specific platform using configuration files and metadata.
+   - These package archives can be copied to an already running Linux system of the same architecture and installed using package manager commands.
 
 
 
