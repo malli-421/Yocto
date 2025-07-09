@@ -335,10 +335,44 @@ II. OpenEmbedded Build System Tasks (Inside the Blue Box)
    - This is the first stage of OpenEmbedded's capability, where it creates package feeds or archives containing pre-compiled binaries         for a specific platform using configuration files and metadata.
    - These package archives can be copied to an already running Linux system of the same architecture and installed using package manager commands.
 
+III. Software Package Feeds (First Stage Output)
+---
 
+- If everything passes QA, the system generates pre-built software packages (feeds):
+  - Copy them to a running embedded Linux system
+  - Install with package managers (opkg, dpkg, or rpm)
+- This output makes it easy to update systems in the field without rebuilding the whole image.
 
+IV. Final Outputs (Second Stage)
+---
+From the software package feeds, the following final outputs are generated:
+1. System Image
+- Bootable OS image for the target board
+  - Contains:
+      - Bootloader
+      - Kernel
+      - Root filesystem
+- This is the end goal — to run Linux on your embedded hardware.
 
+2. Application Development SDK
+- A toolchain for developers to build user-space applications.
+  - Includes:
+      - Cross-compiler
+      - Prebuilt libraries
+      - Target sysroot
+- Enables easy development of apps without setting up complex environments.
 
+BitBake & Dependency Handling
+---
+1. BitBake is the build engine that runs the tasks described in each recipe.
+  - BitBake Commands:
+    - Build a single package:
+    - bitbake openssl
+  - bitbake openssl
+    - bitbake core-image-minimal
+2. Dependency Handling:
+  - If package A depends on B, BitBake builds B first.
+  - Ensures correct build order automatically.
 
 
 
