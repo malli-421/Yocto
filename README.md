@@ -270,13 +270,13 @@ OpenEmbedded consists of a collection of **scripts and Python libraries** that m
 - BitBake: This is the **build engine** that powers the OpenEmbedded build system.
 - Poky: Poky is the reference build system provided by the Yocto Project. It includes everything needed to build a custom embedded Linux OS.
   - it include's:
-        - BitBake
-        - Metadata
-            - Recipe (.bb) Describe hoe to fetch, configure, compile, and install packages.
-            - class (.bbclass) Reusable funtions and build logic.
-            - config files (.conf) it Defines variables, machine settings, distro settings, etc...
-        - Default layers- like a meta, meta_poky, meta_Yocto_bsp 
-- Custom Layer: This is where your own project code goes.
+    - BitBake
+    - Metadata
+      - Recipe (.bb) Describe hoe to fetch, configure, compile, and install packages.
+      - class (.bbclass) Reusable funtions and build logic.
+      - config files (.conf) it Defines variables, machine settings, distro settings, etc...
+      - Default layers- like a meta, meta_poky, meta_Yocto_bsp 
+    - Custom Layer: This is where your own project code goes.
 
 ---
 ---
@@ -298,10 +298,10 @@ I. Inputs to the OpenEmbedded Build System
 2. Metadata: This encompasses all the layers and recipe files contained within those layers.
 3. Recipe files describe how BitBake executes tasks for each software package, such as fetching, unpacking, patching, compiling, and installing.
 4. Machine Configuration: Describes everything related to the platform used in the build and compiler tuning options. Examples include:
-          - Architecture
-          - Device tree
-          - Kernel command line arguments
-          - Kernel config file
+   - Architecture
+   - Device tree
+   - Kernel command line arguments
+   - Kernel config file
 5. Policy Configuration: Customizable settings to change how the build system behaves.
 6. Source Mirrors: Sources from where the build system retrieves source code. These can be Git repositories, tarball archives, or local sources. The build system downloads software source packages from these mirrors based on configuration.
 
