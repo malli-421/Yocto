@@ -365,9 +365,9 @@ From the software package feeds, the following final outputs are generated:
 BitBake & Dependency Handling
 ---
 1. BitBake is the build engine that runs the tasks described in each recipe.
-  - BitBake Commands:
-    - Build a single package:
-    - bitbake openssl
+- BitBake Commands:
+  - Build a single package:
+    -bitbake openssl
   - bitbake openssl
     - bitbake core-image-minimal
 2. Dependency Handling:
