@@ -32,11 +32,23 @@ sudo apt install gawk wget git-core diffstat unzip texinfo gcc \
     - Cross-build support and scripting
   
 
+Setup Build Environment
+---
 
+- we are ready to setup the build environment:
+```
+source oe-init-build-env
+    or
+.  oe-init-build-env
+```
+- It does 3 major things:
+  1. Setup the Build Environment Variables
+  2. Creates a Build Directory
+  3. Make Tools Available
 
-
-
-
+Try to Build the One Package
+---
+![Image](https://github.com/user-attachments/assets/"C:\Users\master\Pictures\Screenshots\Screenshot 2025-07-13 102745.png")
 
 
 
