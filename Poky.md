@@ -48,8 +48,7 @@ source oe-init-build-env
 
 Try to Build the One Package
 ---
-![Image](https://github.com/user-attachments/assets/"C:\Users\master\Pictures\Screenshots\Screenshot 2025-07-13 102745.png")
-
+<img src="/Screenshot 2025-07-13 102745.png" alt="Poky.md" width="400"/>
 
 
 
